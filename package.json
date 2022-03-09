@@ -1,0 +1,22 @@
+{
+  "name": "noctjs",
+  "version": "1.0.0",
+  "description": "noctjs云函数框架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noctcloud/noctjs.git"
+  },
+  "keywords": [
+    "unicloud"
+  ],
+  "author": "Sansnn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noctcloud/noctjs/issues"
+  },
+  "homepage": "https://github.com/noctcloud/noctjs#readme"
+}
