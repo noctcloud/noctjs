@@ -8,7 +8,7 @@
 "use strict";
 
 module.exports = {
-	run: require("./program/run"),
-	service: require("./abstracts/service"),
-	filter: require("./abstracts/filter")
+  run: require("./program/run"),
+  service: require("./abstracts/service"),
+  filter: require("./abstracts/filter")
 }

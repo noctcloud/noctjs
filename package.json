@@ -1,6 +1,6 @@
 {
   "name": "noctjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "noctjs云函数框架",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,8 @@
     "url": "git+https://github.com/noctcloud/noctjs.git"
   },
   "keywords": [
+    "noctjs",
+    "serverless",
     "unicloud"
   ],
   "author": "Sansnn",

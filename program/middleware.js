@@ -2,19 +2,22 @@
 
 const invoke = require("./invoke");
 
+/**
+ * 使用中间件
+ */
 module.exports.use = async ({
 	event,
 	context,
-	explain
+	noct
 }) => {
-	let middlewares = explain.middlewares;
+	let middlewares = noct.middlewares;
 	if (middlewares.length > 0) {
 		let next = async (i) => {
 			if (middlewares.length > i) {
 				await middlewares[i]({
 					event,
 					context,
-					explain,
+					noct,
 					next: async () => {
 						i++;
 						await next(i);
@@ -24,7 +27,7 @@ module.exports.use = async ({
 				await invoke({
 					event,
 					context,
-					explain
+					noct
 				});
 			}
 		}
@@ -33,7 +36,7 @@ module.exports.use = async ({
 		await invoke({
 			event,
 			context,
-			explain
+			noct
 		});
 	}
 }
